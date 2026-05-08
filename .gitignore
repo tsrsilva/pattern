@@ -1,0 +1,28 @@
+# Python
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# R
+
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# Project outputs and generated files
+
+outputs/
+build/
+dist/
+
+# OS/editor
+
+.DS_Store
+.vscode/

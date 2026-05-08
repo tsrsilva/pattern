@@ -1,0 +1,155 @@
+# config.yaml
+corpus:
+  - file: "descriptions/specimen_001.txt"
+    id: "sp1_XXX2025"
+
+    # --- Core identifiers ---
+    species: "Obeza rotunda"
+    description_type: "original"   # original | redescription | genus
+
+    # --- Publication context (Tier 1) ---
+    publication:
+      year: 2025
+      journal: "Revista Brasileira de Bichinhos"
+      journal_type: "society"     # society | museum | commercial
+      country: "Brazil"          # country of journal or publisher
+
+    # --- Institutional proxy (Tier 1) ---
+    depository:
+      code: "MZSP" # e.g., MZSP, USNM, BMNH
+      country: "Brazil"
+      language_environment: "non-anglophone"  # anglophone | non-anglophone | mixed
+
+    # --- Linguistic background proxy (Tier 1, inferred) ---
+    author_linguistic_background: "non-anglophone"  # anglophone | non-anglophone | mixed
+
+    # --- Taxonomic controls (Tier 2) ---
+    taxonomy:
+      order: "Hymenoptera"
+      family: "Eucharitidae"
+
+    # --- Temporal style proxy (Tier 2) ---
+    period_class: "modern_integrative"  # early_descriptive | transitional | modern_integrative
+
+    # --- Authorship (Tier 3, descriptive only) ---
+    authors:
+      - "Author XXX"
+      - "Author YYY"
+
+    # --- Free notes (non-analytic) ---
+    notes: "Holotype; semi-structured morphological description"
+
+  - file: "descriptions/specimen_002.txt"
+    id: "sp2_ZZZ1972"
+
+    # --- Core identifiers ---
+    species: "Lophyrocera smurfette"
+    description_type: "original"   # original | redescription | genus
+
+    # --- Publication context (Tier 1) ---
+    publication:
+      year: 1972
+      journal: "Argentinian Journal of Things Unnamed"
+      journal_type: "society"     # society | museum | commercial
+      country: "Argentina"          # country of journal or publisher
+
+    # --- Institutional proxy (Tier 1) ---
+    depository:
+      code: "MLPA" # e.g., MZSP, USNM, BMNH
+      country: "Argentina"
+      language_environment: "non-anglophone"  # anglophone | non-anglophone | mixed
+
+    # --- Linguistic background proxy (Tier 1, inferred) ---
+    author_linguistic_background: "non-anglophone"  # anglophone | non-anglophone | mixed
+
+    # --- Taxonomic controls (Tier 2) ---
+    taxonomy:
+      order: "Hymenoptera"
+      family: "Eucharitidae"
+
+    # --- Temporal style proxy (Tier 2) ---
+    period_class: "modern_integrative"  # early_descriptive | transitional | modern_integrative
+
+    # --- Authorship (Tier 3, descriptive only) ---
+    authors:
+      - "Author ZZZ"
+
+    # --- Free notes (non-analytic) ---
+    notes: "Holotype; unstructured morphological description"
+
+  - file: "descriptions/specimen_003.txt"
+    id: "sp3_QQQ2011"
+
+    # --- Core identifiers ---
+    species: "Carinaptera aurantia"
+    description_type: "redescription"   # original | redescription | genus
+
+    # --- Publication context (Tier 1) ---
+    publication:
+      year: 2011
+      journal: "Journal of Comparative Microfauna"
+      journal_type: "museum"     # society | museum | commercial
+      country: "Chile"          # country of journal or publisher
+
+    # --- Institutional proxy (Tier 1) ---
+    depository:
+      code: "MNHNCL" # e.g., MZSP, USNM, BMNH
+      country: "Chile"
+      language_environment: "mixed"  # anglophone | non-anglophone | mixed
+
+    # --- Linguistic background proxy (Tier 1, inferred) ---
+    author_linguistic_background: "mixed"  # anglophone | non-anglophone | mixed
+
+    # --- Taxonomic controls (Tier 2) ---
+    taxonomy:
+      order: "Hymenoptera"
+      family: "Eucharitidae"
+
+    # --- Temporal style proxy (Tier 2) ---
+    period_class: "transitional"  # early_descriptive | transitional | modern_integrative
+
+    # --- Authorship (Tier 3, descriptive only) ---
+    authors:
+      - "Author QQQ"
+      - "Author RRR"
+
+    # --- Free notes (non-analytic) ---
+    notes: "Redescription; strongly semi-structured with discrete trait statements"
+
+  - file: "descriptions/specimen_004.txt"
+    id: "sp4_PPP1964"
+
+    # --- Core identifiers ---
+    species: "Noctivaga viridimarginata"
+    description_type: "original"   # original | redescription | genus
+
+    # --- Publication context (Tier 1) ---
+    publication:
+      year: 1964
+      journal: "Transactions of Tropical Arthropod Studies"
+      journal_type: "commercial"     # society | museum | commercial
+      country: "United Kingdom"          # country of journal or publisher
+
+    # --- Institutional proxy (Tier 1) ---
+    depository:
+      code: "BMNH" # e.g., MZSP, USNM, BMNH
+      country: "United Kingdom"
+      language_environment: "anglophone"  # anglophone | non-anglophone | mixed
+
+    # --- Linguistic background proxy (Tier 1, inferred) ---
+    author_linguistic_background: "anglophone"  # anglophone | non-anglophone | mixed
+
+    # --- Taxonomic controls (Tier 2) ---
+    taxonomy:
+      order: "Hymenoptera"
+      family: "Eucharitidae"
+
+    # --- Temporal style proxy (Tier 2) ---
+    period_class: "early_descriptive"  # early_descriptive | transitional | modern_integrative
+
+    # --- Authorship (Tier 3, descriptive only) ---
+    authors:
+      - "Author PPP"
+
+    # --- Free notes (non-analytic) ---
+    notes: "Holotype; narrative prose with evaluative language and embedded comparisons"

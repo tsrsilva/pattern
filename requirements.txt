@@ -1,0 +1,8 @@
+# Core Python dependencies for this project
+PyYAML
+spacy
+pandas
+reportlab
+
+# After installation, download the spaCy English model:
+# python -m spacy download en_core_web_sm
