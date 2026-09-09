@@ -1,8 +1,8 @@
 # Pattern Pipeline
 
-This project extracts linguistic patterns from specimen descriptions and generates:
+This project extracts linguistic patterns from taxonomic descriptions and generates:
 
-- per-specimen CSV/PDF outputs
+- per-description CSV/PDF outputs
 - corpus-level matrices
 - TF-IDF lemma matrix
 - plots and PERMANOVA summary outputs
