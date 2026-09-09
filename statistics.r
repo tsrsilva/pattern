@@ -58,30 +58,40 @@ run_permanova <- function(
     ))
   }
 
-  safe_nperm <- function(requested_nperm, upper_bound) {
+  safe_nperm <- function(requested_nperm, log_upper_bound) {
     # For tiny datasets, disable permutation testing to avoid unstable
     # complete-enumeration paths in the permutation engine.
     if (nrow(meta) < 6) {
       return(0L)
     }
 
-    if (!is.finite(upper_bound) || is.na(upper_bound)) {
+    if (!is.finite(log_upper_bound) || is.na(log_upper_bound)) {
       return(max(1L, as.integer(requested_nperm)))
     }
-    # Keep nperm strictly below full enumeration to avoid complete-set mode.
-    if (upper_bound <= 2) {
+
+    req <- max(1L, as.integer(requested_nperm))
+
+    # If total permutations <= 2, a permutation test is not meaningful.
+    if (log_upper_bound <= log(2)) {
       return(0L)
     }
-    capped <- min(as.integer(requested_nperm), max(1L, as.integer(floor(upper_bound)) - 2L))
-    max(1L, capped)
+
+    # If the upper bound is much larger than req, keep req as-is.
+    if (log_upper_bound > log(req + 2)) {
+      return(req)
+    }
+
+    # Keep nperm strictly below full enumeration to avoid complete-set mode.
+    capped <- floor(exp(log_upper_bound) - 2)
+    max(1L, min(req, as.integer(capped)))
   }
 
   if (!is.null(strata_var)) {
     strata <- as.factor(meta[[strata_var]])
     block_sizes <- as.numeric(table(strata))
-    # Upper bound for permutations under block-restricted shuffling.
-    perm_upper <- exp(sum(lgamma(block_sizes + 1)))
-    n_perm_eff <- safe_nperm(n_perm, perm_upper)
+    # Log upper bound for permutations under block-restricted shuffling.
+    log_perm_upper <- sum(lgamma(block_sizes + 1))
+    n_perm_eff <- safe_nperm(n_perm, log_perm_upper)
 
     # Use an explicit permutation design for small, stratified datasets to
     # avoid exhaustive-set generation and instability in some setups.
@@ -93,9 +103,9 @@ run_permanova <- function(
     )
     strata_arg <- NULL
   } else {
-    # Upper bound for unrestricted permutations across rows.
-    perm_upper <- exp(lgamma(nrow(meta) + 1))
-    n_perm_eff <- safe_nperm(n_perm, perm_upper)
+    # Log upper bound for unrestricted permutations across rows.
+    log_perm_upper <- lgamma(nrow(meta) + 1)
+    n_perm_eff <- safe_nperm(n_perm, log_perm_upper)
     perm_ctrl <- n_perm_eff
     strata_arg <- NULL
   }

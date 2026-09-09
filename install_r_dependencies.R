@@ -1,5 +1,13 @@
 #!/usr/bin/env Rscript
 
+# Fall back to a writable personal library if the default one isn't writable (common on Linux system R installs).
+default_lib <- .libPaths()[1]
+if (file.access(default_lib, mode = 2) != 0) {
+  user_lib <- Sys.getenv("R_LIBS_USER", unset = file.path(Sys.getenv("HOME"), "R", "library"))
+  dir.create(user_lib, recursive = TRUE, showWarnings = FALSE)
+  .libPaths(c(user_lib, .libPaths()))
+}
+
 cran_packages <- c(
   "readr", "dplyr", "tidyr", "pheatmap", "circlize",
   "gridExtra", "viridisLite", "ggplot2", "stringr",
