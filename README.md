@@ -1,4 +1,4 @@
-tern Pipeline
+# Pattern Pipeline
 
 This project extracts linguistic patterns from taxonomic descriptions and generates:
 
