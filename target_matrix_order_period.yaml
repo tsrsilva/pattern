@@ -1,0 +1,387 @@
+# Target matrix and placeholders for a balanced Order x Period design
+# Use this file as a planning template, then copy selected entries into config.yaml -> corpus.
+
+matrix:
+  design: "balanced_order_x_period"
+  orders:
+    - "Hymenoptera"
+    - "Coleoptera"
+    - "Gastropoda"
+    - "Copepoda"
+  period_classes:
+    - "early_descriptive"
+    - "transitional"
+    - "modern_integrative"
+  target_per_cell: 1
+  total_target_descriptions: 12
+
+# Optional expansion targets for stronger inference
+expansion_options:
+  min_robust_target_per_cell: 2
+  preferred_target_per_cell: 3
+  total_if_2_per_cell: 24
+  total_if_3_per_cell: 36
+
+# Paste entries from this section under `corpus:` in config.yaml.
+# Keep `description_type` constant (recommended: original) in phase 1.
+# Replace all TBD values before running the pipeline.
+planned_corpus_entries:
+  - file: "descriptions/plan_hymenoptera_early_descriptive_01.txt"
+    id: "plan_hymenoptera_early_descriptive_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Hymenoptera"
+      family: "TBD"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Hymenoptera x early_descriptive"
+
+  - file: "descriptions/plan_hymenoptera_transitional_01.txt"
+    id: "plan_hymenoptera_transitional_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Hymenoptera"
+      family: "TBD"
+
+    period_class: "transitional"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Hymenoptera x transitional"
+
+  - file: "descriptions/plan_hymenoptera_modern_integrative_01.txt"
+    id: "plan_hymenoptera_modern_integrative_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Hymenoptera"
+      family: "TBD"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Hymenoptera x modern_integrative"
+
+  - file: "descriptions/plan_coleoptera_early_descriptive_01.txt"
+    id: "plan_coleoptera_early_descriptive_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Coleoptera"
+      family: "TBD"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Coleoptera x early_descriptive"
+
+  - file: "descriptions/plan_coleoptera_transitional_01.txt"
+    id: "plan_coleoptera_transitional_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Coleoptera"
+      family: "TBD"
+
+    period_class: "transitional"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Coleoptera x transitional"
+
+  - file: "descriptions/plan_coleoptera_modern_integrative_01.txt"
+    id: "plan_coleoptera_modern_integrative_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Coleoptera"
+      family: "TBD"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Coleoptera x modern_integrative"
+
+  - file: "descriptions/plan_gastropoda_early_descriptive_01.txt"
+    id: "plan_gastropoda_early_descriptive_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Gastropoda"
+      family: "TBD"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Gastropoda x early_descriptive"
+
+  - file: "descriptions/plan_gastropoda_transitional_01.txt"
+    id: "plan_gastropoda_transitional_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Gastropoda"
+      family: "TBD"
+
+    period_class: "transitional"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Gastropoda x transitional"
+
+  - file: "descriptions/plan_gastropoda_modern_integrative_01.txt"
+    id: "plan_gastropoda_modern_integrative_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Gastropoda"
+      family: "TBD"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Gastropoda x modern_integrative"
+
+  - file: "descriptions/plan_copepoda_early_descriptive_01.txt"
+    id: "plan_copepoda_early_descriptive_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Copepoda"
+      family: "TBD"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Copepoda x early_descriptive"
+
+  - file: "descriptions/plan_copepoda_transitional_01.txt"
+    id: "plan_copepoda_transitional_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Copepoda"
+      family: "TBD"
+
+    period_class: "transitional"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Copepoda x transitional"
+
+  - file: "descriptions/plan_copepoda_modern_integrative_01.txt"
+    id: "plan_copepoda_modern_integrative_01"
+
+    species: "TBD"
+    description_type: "original"
+
+    publication:
+      year: 0
+      journal: "TBD"
+      journal_type: "TBD"
+      country: "TBD"
+
+    depository:
+      code: "TBD"
+      country: "TBD"
+      language_environment: "TBD"
+
+    author_linguistic_background: "TBD"
+
+    taxonomy:
+      order: "Copepoda"
+      family: "TBD"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "TBD"
+
+    notes: "Target cell: Copepoda x modern_integrative"

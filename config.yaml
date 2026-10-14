@@ -1,140 +1,24 @@
 # config.yaml
 corpus:
-  - file: "descriptions/specimen_001.txt"
-    id: "sp1_XXX2025"
+  - file: "descriptions/plan_hymenoptera_early_descriptive_01.txt"
+    id: "plan_hymenoptera_early_descriptive_01"
 
     # --- Core identifiers ---
-    species: "Obeza rotunda"
+    species: "Strumigenys lilloana"
     description_type: "original"   # original | redescription | genus
 
     # --- Publication context (Tier 1) ---
     publication:
-      year: 2025
-      journal: "Revista Brasileira de Bichinhos"
+      year: 1950
+      journal: "Transactions of the American Entomological Society"
       journal_type: "society"     # society | museum | commercial
-      country: "Brazil"          # country of journal or publisher
+      country: "United States of America"          # country of journal or publisher
 
     # --- Institutional proxy (Tier 1) ---
     depository:
-      code: "MZSP" # e.g., MZSP, USNM, BMNH
-      country: "Brazil"
-      language_environment: "non-anglophone"  # anglophone | non-anglophone | mixed
-
-    # --- Linguistic background proxy (Tier 1, inferred) ---
-    author_linguistic_background: "non-anglophone"  # anglophone | non-anglophone | mixed
-
-    # --- Taxonomic controls (Tier 2) ---
-    taxonomy:
-      order: "Hymenoptera"
-      family: "Eucharitidae"
-
-    # --- Temporal style proxy (Tier 2) ---
-    period_class: "modern_integrative"  # early_descriptive | transitional | modern_integrative
-
-    # --- Authorship (Tier 3, descriptive only) ---
-    authors:
-      - "Author XXX"
-      - "Author YYY"
-
-    # --- Free notes (non-analytic) ---
-    notes: "Holotype; semi-structured morphological description"
-
-  - file: "descriptions/specimen_002.txt"
-    id: "sp2_ZZZ1972"
-
-    # --- Core identifiers ---
-    species: "Lophyrocera smurfette"
-    description_type: "original"   # original | redescription | genus
-
-    # --- Publication context (Tier 1) ---
-    publication:
-      year: 1972
-      journal: "Argentinian Journal of Things Unnamed"
-      journal_type: "society"     # society | museum | commercial
-      country: "Argentina"          # country of journal or publisher
-
-    # --- Institutional proxy (Tier 1) ---
-    depository:
-      code: "MLPA" # e.g., MZSP, USNM, BMNH
+      code: "IML"
       country: "Argentina"
       language_environment: "non-anglophone"  # anglophone | non-anglophone | mixed
-
-    # --- Linguistic background proxy (Tier 1, inferred) ---
-    author_linguistic_background: "non-anglophone"  # anglophone | non-anglophone | mixed
-
-    # --- Taxonomic controls (Tier 2) ---
-    taxonomy:
-      order: "Hymenoptera"
-      family: "Eucharitidae"
-
-    # --- Temporal style proxy (Tier 2) ---
-    period_class: "modern_integrative"  # early_descriptive | transitional | modern_integrative
-
-    # --- Authorship (Tier 3, descriptive only) ---
-    authors:
-      - "Author ZZZ"
-
-    # --- Free notes (non-analytic) ---
-    notes: "Holotype; unstructured morphological description"
-
-  - file: "descriptions/specimen_003.txt"
-    id: "sp3_QQQ2011"
-
-    # --- Core identifiers ---
-    species: "Carinaptera aurantia"
-    description_type: "redescription"   # original | redescription | genus
-
-    # --- Publication context (Tier 1) ---
-    publication:
-      year: 2011
-      journal: "Journal of Comparative Microfauna"
-      journal_type: "museum"     # society | museum | commercial
-      country: "Chile"          # country of journal or publisher
-
-    # --- Institutional proxy (Tier 1) ---
-    depository:
-      code: "MNHNCL" # e.g., MZSP, USNM, BMNH
-      country: "Chile"
-      language_environment: "mixed"  # anglophone | non-anglophone | mixed
-
-    # --- Linguistic background proxy (Tier 1, inferred) ---
-    author_linguistic_background: "mixed"  # anglophone | non-anglophone | mixed
-
-    # --- Taxonomic controls (Tier 2) ---
-    taxonomy:
-      order: "Hymenoptera"
-      family: "Eucharitidae"
-
-    # --- Temporal style proxy (Tier 2) ---
-    period_class: "transitional"  # early_descriptive | transitional | modern_integrative
-
-    # --- Authorship (Tier 3, descriptive only) ---
-    authors:
-      - "Author QQQ"
-      - "Author RRR"
-
-    # --- Free notes (non-analytic) ---
-    notes: "Redescription; strongly semi-structured with discrete trait statements"
-
-  - file: "descriptions/specimen_004.txt"
-    id: "sp4_PPP1964"
-
-    # --- Core identifiers ---
-    species: "Noctivaga viridimarginata"
-    description_type: "original"   # original | redescription | genus
-
-    # --- Publication context (Tier 1) ---
-    publication:
-      year: 1964
-      journal: "Transactions of Tropical Arthropod Studies"
-      journal_type: "commercial"     # society | museum | commercial
-      country: "United Kingdom"          # country of journal or publisher
-
-    # --- Institutional proxy (Tier 1) ---
-    depository:
-      code: "BMNH" # e.g., MZSP, USNM, BMNH
-      country: "United Kingdom"
-      language_environment: "anglophone"  # anglophone | non-anglophone | mixed
 
     # --- Linguistic background proxy (Tier 1, inferred) ---
     author_linguistic_background: "anglophone"  # anglophone | non-anglophone | mixed
@@ -142,14 +26,361 @@ corpus:
     # --- Taxonomic controls (Tier 2) ---
     taxonomy:
       order: "Hymenoptera"
-      family: "Eucharitidae"
+      family: "Formicidae"
 
     # --- Temporal style proxy (Tier 2) ---
     period_class: "early_descriptive"  # early_descriptive | transitional | modern_integrative
 
     # --- Authorship (Tier 3, descriptive only) ---
     authors:
-      - "Author PPP"
+      - "William L. Brown Jr."
 
     # --- Free notes (non-analytic) ---
-    notes: "Holotype; narrative prose with evaluative language and embedded comparisons"
+    notes: "Target cell: Hymenoptera x early_descriptive"
+
+  - file: "descriptions/plan_hymenoptera_transitional_01.txt"
+    id: "plan_hymenoptera_transitional_01"
+
+    species: "Leptanilloides legionaria"
+    description_type: "original"
+
+    publication:
+      year: 1998
+      journal: "Systematic Entomology"
+      journal_type: "society"
+      country: "England"
+
+    depository:
+      code: "MCZ"
+      country: "United States of America"
+      language_environment: "anglophone"
+
+    author_linguistic_background: "mixed"
+
+    taxonomy:
+      order: "Hymenoptera"
+      family: "Formicidae"
+
+    period_class: "transitional"
+
+    authors:
+      - "Carlos R. F. Brandão"
+      - "Jorge L. M. Diniz"
+      - "Donat Agosti"
+      - "Jacques H. Delabie"
+
+    notes: "Target cell: Hymenoptera x transitional"
+
+  - file: "descriptions/plan_hymenoptera_modern_integrative_01.txt"
+    id: "plan_hymenoptera_modern_integrative_01"
+
+    species: "Strumigenys jaqueline"
+    description_type: "original"
+
+    publication:
+      year: 2025
+      journal: "Revista Brasileira de Entomologia"
+      journal_type: "society"
+      country: "Brazil"
+
+    depository:
+      code: "MZSP"
+      country: "Brazil"
+      language_environment: "non-anglophone"
+
+    author_linguistic_background: "non-anglophone"
+
+    taxonomy:
+      order: "Hymenoptera"
+      family: "Formicidae"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "Thiago S. R. Silva"
+      - "Natalia Ladino"
+      - "Rodrigo M. Feitosa"
+
+    notes: "Target cell: Hymenoptera x modern_integrative"
+
+  - file: "descriptions/plan_coleoptera_early_descriptive_01.txt"
+    id: "plan_coleoptera_early_descriptive_01"
+
+    species: "Agabus verus"
+    description_type: "original"
+
+    publication:
+      year: 1931
+      journal: "The Canadian Entomologist"
+      journal_type: "society"
+      country: "Canada"
+
+    depository:
+      code: "CNC"
+      country: "Canada"
+      language_environment: "mixed"
+
+    author_linguistic_background: "anglophone"
+
+    taxonomy:
+      order: "Coleoptera"
+      family: "Dytiscidae"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "Williamson J. Brown"
+
+    notes: "Target cell: Coleoptera x early_descriptive"
+
+  - file: "descriptions/plan_coleoptera_transitional_01.txt"
+    id: "plan_coleoptera_transitional_01"
+
+    species: "Hemipeplus abditus"
+    description_type: "original"
+
+    publication:
+      year: 1999
+      journal: "Entomologica Scandinavica"
+      journal_type: "society"
+      country: "Sweden"
+
+    depository:
+      code: "UNAM"
+      country: "Mexico"
+      language_environment: "non-anglophone"
+
+    author_linguistic_background: "anglophone"
+
+    taxonomy:
+      order: "Coleoptera"
+      family: "Mycteridae"
+
+    period_class: "transitional"
+
+    authors:
+      - "Darren A. Pollock"
+
+    notes: "Target cell: Coleoptera x transitional"
+
+  - file: "descriptions/plan_coleoptera_modern_integrative_01.txt"
+    id: "plan_coleoptera_modern_integrative_01"
+
+    species: "Copelatus maushomi"
+    description_type: "original"
+
+    publication:
+      year: 2018
+      journal: "Zootaxa"
+      journal_type: "commercial"
+      country: "New Zealand"
+
+    depository:
+      code: "NMPC"
+      country: "Czech Republic"
+      language_environment: "non-anglophone"
+
+    author_linguistic_background: "mixed"
+
+    taxonomy:
+      order: "Coleoptera"
+      family: "Dytiscidae"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "Sayali D. Sheth"
+      - "Hemant V. Ghate"
+      - "Jiří Hájek"
+
+    notes: "Target cell: Coleoptera x modern_integrative"
+
+  - file: "descriptions/plan_gastropoda_early_descriptive_01.txt"
+    id: "plan_gastropoda_early_descriptive_01"
+
+    species: "Micrarionta opuntia"
+    description_type: "original"
+
+    publication:
+      year: 1975
+      journal: "Bulletin Southern California Academy of Sciences"
+      journal_type: "society"
+      country: "United States of America"
+
+    depository:
+      code: "CASG"
+      country: "United States of America"
+      language_environment: "anglophone"
+
+    author_linguistic_background: "anglophone"
+
+    taxonomy:
+      order: "Stylommatophora"
+      family: "Xanthonychidae"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "Barry Roth"
+
+    notes: "Target cell: Gastropoda x early_descriptive"
+
+  - file: "descriptions/plan_gastropoda_transitional_001.txt"
+    id: "plan_gastropoda_transitional_01"
+
+    species: "Tarraconia rolani"
+    description_type: "original"
+
+    publication:
+      year: 2000
+      journal: "Malacologia"
+      journal_type: "museum"
+      country: "United States of America"
+
+    depository:
+      code: "MNCN"
+      country: "Spain"
+      language_environment: "non-anglophone"
+
+    author_linguistic_background: "non-anglophone"
+
+    taxonomy:
+      order: "Littorinimorpha"
+      family: "Hydrobiidae"
+
+    period_class: "transitional"
+
+    authors:
+      - "Marian A. Ramos"
+      - "Beatriz Arconada"
+      - "Emilio Rolán"
+      - "Diego Moreno"
+
+    notes: "Target cell: Gastropoda x transitional"
+
+  - file: "descriptions/plan_gastropoda_modern_integrative_01.txt"
+    id: "plan_gastropoda_modern_integrative_01"
+
+    species: "Hua luquanensis"
+    description_type: "original"
+
+    publication:
+      year: 2026
+      journal: "Zoosystematics and Evolution"
+      journal_type: "commercial"
+      country: "Germany"
+    
+    depository:
+      code: "KIZ"
+      country: "China"
+      language_environment: "non-anglophone"
+
+    author_linguistic_background: "non-anglophone"
+
+    taxonomy:
+      order: "Caenogastropoda incertae sedis"
+      family: "Semisulcospiridae"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "Li-Zhen Pang"
+      - "Xiang-Rong Tong"
+      - "Chang-You Zhao"
+      - "Li-Na Du"
+      - "De-Jun Kong"
+
+    notes: "Target cell: Gastropoda x modern_integrative"
+
+  - file: "descriptions/plan_copepoda_early_descriptive_01.txt"
+    id: "plan_copepoda_early_descriptive_01"
+
+    species: "Caligus lalandei"
+    description_type: "original"
+
+    publication:
+      year: 1948
+      journal: "Journal of Natural History"
+      journal_type: "commercial"
+      country: "United Kingdom"
+
+    depository:
+      code: "ISAM"
+      country: "South Africa"
+      language_environment: "anglophone"
+
+    author_linguistic_background: "anglophone"
+
+    taxonomy:
+      order: "Siphonostomatoida"
+      family: "Caligidae"
+
+    period_class: "early_descriptive"
+
+    authors:
+      - "Keppel Harcourt Barnard"
+
+    notes: "Target cell: Copepoda x early_descriptive"
+
+  - file: "descriptions/plan_copepoda_transitional_01.txt"
+    id: "plan_copepoda_transitional_01"
+
+    species: "Monstrilla satchmoi"
+    description_type: "original"
+
+    publication:
+      year: 2001
+      journal: "Bulletin de l'Institut Royal des Sciences Naturelles de Belgique"
+      journal_type: "society"
+      country: "Belgium"
+
+    depository:
+      code: "MNRJ"
+      country: "Brazil"
+      language_environment: "non-anglophone"
+
+    author_linguistic_background: "non-anglophone"
+
+    taxonomy:
+      order: "Monstrilloida"
+      family: "Monstrillidae"
+
+    period_class: "transitional"
+
+    authors:
+      - "Eduardo Suárez-Morales"
+      - "Cristina de Oliveira Dias"
+
+    notes: "Target cell: Copepoda x transitional"
+
+  - file: "descriptions/plan_copepoda_modern_integrative_01.txt"
+    id: "plan_copepoda_modern_integrative_01"
+
+    species: "Canthocamptus waldemarschneideri"
+    description_type: "original"
+
+    publication:
+      year: 2022
+      journal: "European Journal of Taxonomy"
+      journal_type: "museum"
+      country: "France"
+
+    depository:
+      code: "KFU"
+      country: "Russia"
+      language_environment: "non-anglophone"
+    author_linguistic_background: "non-anglophone"
+
+    taxonomy:
+      order: "Harpacticoida"
+      family: "Canthocamptidae"
+
+    period_class: "modern_integrative"
+
+    authors:
+      - "Aleksandr Novikov"
+      - "Dayana Sharafutdinova"
+      
+    notes: "Target cell: Copepoda x modern_integrative"
+
+
